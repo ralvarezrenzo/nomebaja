@@ -1,0 +1,20 @@
+$primary: #fa6394;
+$secondary: #345963;
+$grid-gutter-width: 0rem;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$custom-colors:(
+    "nomebaja-magenta":#fa6394,
+    "nomebaja-blue": #345963
+);
+$theme-colors: map-merge(
+    $map1: $theme-colors, 
+    $map2: $custom-colors);
+
+// #fa6394
+// #345963
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
