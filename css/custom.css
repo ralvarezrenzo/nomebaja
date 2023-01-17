@@ -199,14 +199,13 @@ img{
     bottom: 32px;
     display: none;
 }
-/* NOSOTROS */
-.heading-nosotros{
-    background-image: url(../imagenes/sobre-nosotros.jpg);
+/* HEADING BANNER ALL */
+.heading-banner{
     background-position: 50% -60px;
     position: relative;
     border-radius: 0 0 32px 32px;
 }
-.heading-nosotros::before{
+.heading-banner::before{
     content: " ";
     height: 100%;
     left: 0;
@@ -217,15 +216,20 @@ img{
     background: rgba(17, 17, 17, 0.6) none repeat scroll 0 0;
     border-radius: 0 0 32px 32px;
 }
-.title-nosotros{
+.heading-banner__title{
     z-index: 990;
     border-radius: 12px;
+}
+/* NOSOTROS */
+.heading-banner__nosotros{
+    background-image: url(../imagenes/sobre-nosotros.jpg);
 }
 /* NOSOTROS */
 /* ASESORIA-NOSOTROS */
 .img-asesoria{
     width: 100% !important;
 }
+/* LUAGARES DE VENTA */
 @media screen and (min-width:576px) {
     /* NAVBAR-MENU PRINCIPAL  */
     .nav-principal{
