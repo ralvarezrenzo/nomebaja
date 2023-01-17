@@ -10,7 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 3.5rem;
+    padding-top: 3.7rem;
 }
 /* CONTAINER-PADDING-EJE-X */
 .container-px-1{
@@ -201,7 +201,7 @@ img{
 }
 /* NOSOTROS */
 .heading-nosotros{
-    background-image: url(/imagenes/sobre-nosotros.jpg);
+    background-image: url(../imagenes/sobre-nosotros.jpg);
     background-position: 50% -60px;
     position: relative;
     border-radius: 0 0 32px 32px;
@@ -321,9 +321,4 @@ img{
         background-color: #345963;
         color: var(--bs-white);
     }
-        /* NOSOTROS */
-/* ASESORIA-NOSOTROS */
-.img-asesoria{
-    width: 55% !important;
-}
 }
