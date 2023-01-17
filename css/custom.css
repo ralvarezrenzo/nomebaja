@@ -10,6 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 3.5rem;
 }
 /* CONTAINER-PADDING-EJE-X */
 .container-px-1{
@@ -28,7 +29,7 @@ body{
     align-items: center;
     justify-content: center;
     background: var(--bs-nomebaja-magenta);
-    height: 80px;
+    height: 75px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -64,11 +65,11 @@ body{
     transform: scale(1.1);
 }
 .boton-whatsapp__img{
-    width: 72px;
+    width: 67px;
 }
 .boton-preguntas__img,
 .boton-zonas__img{
-    width: 35px;
+    width: 32px;
 }
 .barra__enlace{
     color: white;
@@ -88,10 +89,15 @@ img{
 /* HEADER */
 /* NAVBAR PRINCIPAL */
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 80px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     padding: 0 !important;
+    z-index: 999;
+    background-color: #fff;
 }
 .header__content{
     padding: 0 !important;
@@ -188,10 +194,37 @@ img{
 }
 /* BOTON WHATSAPP FLOTANTE */
 .enlace-whatsapp__flotante{
-    position: absolute;
+    position: fixed;
     right: 32px;
     bottom: 32px;
     display: none;
+}
+/* NOSOTROS */
+.heading-nosotros{
+    background-image: url(/imagenes/sobre-nosotros.jpg);
+    background-position: 50% -60px;
+    position: relative;
+    border-radius: 0 0 32px 32px;
+}
+.heading-nosotros::before{
+    content: " ";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    background: rgba(17, 17, 17, 0.6) none repeat scroll 0 0;
+    border-radius: 0 0 32px 32px;
+}
+.title-nosotros{
+    z-index: 990;
+    border-radius: 12px;
+}
+/* NOSOTROS */
+/* ASESORIA-NOSOTROS */
+.img-asesoria{
+    width: 100% !important;
 }
 @media screen and (min-width:576px) {
     /* NAVBAR-MENU PRINCIPAL  */
@@ -226,6 +259,11 @@ img{
     .enlace-whatsapp__flotante{
         display: initial;
     }
+    /* NOSOTROS */
+/* ASESORIA-NOSOTROS */
+.img-asesoria{
+    width: 75% !important;
+}
 }
 @media screen and (min-width: 992px){
     /* BOTON MENU-NAVBAR PRINCPIAL */
@@ -283,4 +321,9 @@ img{
         background-color: #345963;
         color: var(--bs-white);
     }
+        /* NOSOTROS */
+/* ASESORIA-NOSOTROS */
+.img-asesoria{
+    width: 55% !important;
+}
 }
