@@ -33,6 +33,7 @@ body{
     position: fixed;
     left: 0;
     bottom: 0;
+    z-index: 998;
 }
 .barra__mobile{
     width: 95%;
@@ -230,6 +231,62 @@ img{
     width: 100% !important;
 }
 /* LUAGARES DE VENTA */
+/* SLIDER PRINCIPAL */
+.slider-principal{
+    position: relative;
+    min-height: 300px;
+    height: 65vh !important;
+    max-height: 450px !important;
+}
+.slider-principal__inner{
+    height: 100% !important;
+    position: relative;
+}
+.slider-principal__inner .slider-item::before{
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    background: rgba(17, 17, 17, 0.4) none repeat scroll 0 0;
+}
+.slider-item{
+    height: 100%;
+}
+.slider-item img{
+    height: 100%;
+    object-fit: cover;
+}
+.slider-principal__botones{
+    height: 40px;
+    width: 40px !important;
+    top: 46% !important;
+    border-radius: 50%;
+    background-color: var(--bs-nomebaja-magenta) !important;
+    /* background-color: var(--bs-nomebaja-blue) !important; */
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 1.5rem !important;
+}
+.carousel-control-prev{
+    left: 5% !important;
+}
+.carousel-control-next{
+    right: 5% !important;
+}
+/* SLIDER INDICADORES */
+.slider-principal__indicadores{
+    /* background-color: var(--bs-nomebaja-magenta) !important; */
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+}
+.active{
+    background-color: var(--bs-nomebaja-magenta) !important;
+}
 @media screen and (min-width:576px) {
     /* NAVBAR-MENU PRINCIPAL  */
     .nav-principal{
