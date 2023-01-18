@@ -231,6 +231,9 @@ img{
     width: 100% !important;
 }
 /* LUAGARES DE VENTA */
+.heading-banner__ventas{
+    background-image: url(../imagenes/sobre-nosotros.jpg);
+}
 /* SLIDER PRINCIPAL */
 .slider-principal{
     position: relative;
@@ -260,13 +263,15 @@ img{
     height: 100%;
     object-fit: cover;
 }
+.carousel-caption{
+    bottom: 35% !important;
+}
 .slider-principal__botones{
     height: 40px;
     width: 40px !important;
     top: 46% !important;
     border-radius: 50%;
     background-color: var(--bs-nomebaja-magenta) !important;
-    /* background-color: var(--bs-nomebaja-blue) !important; */
 }
 .carousel-control-prev-icon, .carousel-control-next-icon{
     width: 1.5rem !important;
