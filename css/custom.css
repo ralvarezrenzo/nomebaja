@@ -112,6 +112,7 @@ img{
 }
 .logo{
     margin-left: 1rem;
+    width: 180px;
 }
 .hamburger-box{
     display: flex !important;
@@ -199,12 +200,21 @@ img{
     right: 32px;
     bottom: 32px;
     display: none;
+    z-index: 998;
+}
+.enlace-whatsapp__flotante .boton-whatsapp__img{
+    transition-duration: .5s;
+}
+.enlace-whatsapp__flotante:hover .boton-whatsapp__img{
+    /* background-color: red; */
+    width: 72px;
 }
 /* HEADING BANNER ALL */
 .heading-banner{
     background-position: 50% -60px;
     position: relative;
     border-radius: 0 0 32px 32px;
+    background-attachment: fixed;
 }
 .heading-banner::before{
     content: " ";
@@ -230,8 +240,17 @@ img{
 .img-asesoria{
     width: 100% !important;
 }
-/* LUAGARES DE VENTA */
+/* IMAGENES BANNER */
+/* LUAGARES DE VENTA / BANNER IMAGEN*/
 .heading-banner__ventas{
+    background-image: url(../imagenes/sobre-nosotros.jpg);
+}
+/* BLOG BANNER IMAGEN  */
+.heading-banner__blog{
+    background-image: url(../imagenes/sobre-nosotros.jpg);
+}
+/* PREGUNTAS FRECUENTS BANNER IMAGEN  */
+.heading-banner__preguntas{
     background-image: url(../imagenes/sobre-nosotros.jpg);
 }
 /* SLIDER PRINCIPAL */
@@ -272,9 +291,20 @@ img{
     top: 46% !important;
     border-radius: 50%;
     background-color: var(--bs-nomebaja-magenta) !important;
+    opacity: .6 !important;
+    transition-duration: .5s !important;
+}
+.slider-principal__botones:hover{
+    opacity: 1 !important;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon{
-    width: 1.5rem !important;
+    width: 1.3rem !important;
+}
+.carousel-control-prev-icon{
+    margin-right: 3px !important;
+}
+.carousel-control-next-icon{
+    margin-left: 3px !important;
 }
 .carousel-control-prev{
     left: 5% !important;
@@ -283,11 +313,6 @@ img{
     right: 5% !important;
 }
 /* SLIDER INDICADORES */
-.slider-principal__indicadores{
-    width: 20px !important;
-    height: 20px !important;
-    border-radius: 50%;
-}
 .active{
     background-color: var(--bs-nomebaja-magenta) !important;
 }
@@ -388,6 +413,7 @@ img{
     }
     /* SLIDER PRINCIPAL */
 .slider-principal{
-    height: 75vh !important;  
+    height: 75vh !important;
+    /* max-height: 600px !important;   */
 }
 }
