@@ -386,4 +386,8 @@ img{
         background-color: #345963;
         color: var(--bs-white);
     }
+    /* SLIDER PRINCIPAL */
+.slider-principal{
+    height: 75vh !important;  
+}
 }
