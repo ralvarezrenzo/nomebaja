@@ -284,9 +284,8 @@ img{
 }
 /* SLIDER INDICADORES */
 .slider-principal__indicadores{
-    /* background-color: var(--bs-nomebaja-magenta) !important; */
-    width: 15px !important;
-    height: 15px !important;
+    width: 20px !important;
+    height: 20px !important;
     border-radius: 50%;
 }
 .active{
