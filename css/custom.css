@@ -316,6 +316,11 @@ img{
 .active{
     background-color: var(--bs-nomebaja-magenta) !important;
 }
+/* TABS NAV */
+.nav-tabs > .active{
+    color: white !important;
+    font-weight: bolder;
+}
 @media screen and (min-width:576px) {
     /* NAVBAR-MENU PRINCIPAL  */
     .nav-principal{
